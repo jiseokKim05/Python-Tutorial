@@ -791,3 +791,155 @@ for x in adj:
   for y in fruits:
     print(x, y)
 ```
+
+## PYTHON Functions
+
+### 함수 생성
+
+#### `def` 키워드로 함수 정리
+
+```python
+def my_function():
+  print("My New Function")
+```
+
+### 함수 호출
+
+#### 함수 이름 뒤에 괄호로 함수를 호출할 수 있음
+
+```python
+def my_function():
+  print("Ji Seok's Function")
+
+my_function()
+```
+
+### 인수
+
+#### 함수에 인수로 전달할 수 있다(fname)
+
+```python
+def my_function(fname):
+  print(fname + "KIM")
+
+my_function("Ji")
+my_function("Seok")
+```
+인수를 여러 개를 사용 가능
+
+```python
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Ji", "Seok")
+
+#result
+Ji Seok
+```
+
+튜플로 활용 가능
+
+```python
+def my_function(*Name):
+  print("The youngest child is " + Name[2])
+
+my_function("지석", "민준", "영수")
+
+#result
+민준
+```
+## PYTHON Lambda
+
+### lambda 함수
+
+```python
+
+람다로 인수 더하기
+x = lambda a : a + 10
+print(x(5))
+
+람다로 인수 곱하기
+x = lambda a, b : a * b
+print(x(5, 6))
+```
+
+## PYTHON Class
+
+### 배열
+
+#### 배열은 단일 변수에 여러 값을 저장하는 데 사용됨
+
+```python
+fact = ["윤동현", "바보", "멍청이"]
+```
+### 배열 요소 액세스
+
+####
+```python
+첫 번째 배열 요소를 액세스하는 함수
+x = fact[0]
+
+첫 번째 배열 요소의 값을 수정하는 함수
+fact[0] = "김영수"
+```
+### 배열 길이
+
+####
+```python
+x = len(fact)
+```
+
+### 반복 배열 요소
+
+```python
+for x in fact:
+  print(x)
+```
+
+## PYTHON Class
+
+### 클래스 만들기
+
+####
+```python
+class MyClass:
+  x = 5
+
+객체 생성
+js = MyClass()
+print(js.x)
+```
+
+### __init__() 함수
+
+####
+Person 이라는 클래스를 만들고 __init__() 함수로 이름과 나이를 할당함
+
+```python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+js = Person("윤동현", 20)
+
+print(js.name)
+print(js.age)
+```
+
+## PYTHON Inheritance
+
+### inter() 함수
+
+####
+투플에서 next 함수
+
+```python
+mytuple = ("영수", "지석", "민준")
+myit = inter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+```
+
+
